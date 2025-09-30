@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="listagem container">
+        <h2> Lista Funcionários</h2>
+        <div id="listar-doadores">
+            <p> Carregando Funcionários</p>
+        </div>
+    </div>
+    <div id="formulario-edicao" style="display:none">
+        <h2> Edição de Funcionário</h2>
+        <label for="nome"> Nome: </label>
+        <input type="text" id="editar-nome">
+        <br> <br>
+        <label for="editar-idade"> Idade: </label>
+        <input type="number" id="editar-idade">
+        <br> <br>
+        <label for="editar-cargo"> Cargo: </label>
+        <input type="text" id="editar-cargo">
+        <br> <br>
+        <input type="hidden" id="editar-id">
+        <button id="botaoSalvarEdicao"> Salvar Alterações </button>
+        <button id="botaoCancelarEdicao"> Cancelar </button>
+    </div>
+       
+            
+    <script src="./../js/listaDoadores.js" type="module"></script>
+</body>
+</html>
