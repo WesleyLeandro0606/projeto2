@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css">
 </head>
 <body>
+    <img src="./../logo.jpeg" alt="Logo " id="imagem">
+    <div id="header-container"></div>
     <div id="cadastro-container"></div>
-    <div id="caixa-cadastro">
-        <h2> Cadastras Novos Doadores</h2>
+    
+        <h2> Cadastrar Novos Doadores</h2>
         <label for="nome"> Nome: </label>
         <input type="text" id="nome">
         <br>
@@ -19,13 +22,16 @@
         <input type="number" id="cnpj">
         <br>
         <button id="botaoEnviar"> Cadastrar </button>
+        <br>
+        <br>
+         <div id="header-container"></div>
     </div>
     <script type="module" src="/js/cadastroDeDoadores.js"></script>
     <script>
         async function carregarHeader(){
             const response = await fetch("/componentes/header.html");
             const headerHTML = await response.text();
-            document.getElementById("cadastro-container").innerHTML = headerHTML;  
+            document.getElementById("header-container").innerHTML = headerHTML;  
         }
         carregarHeader();
     </script>
