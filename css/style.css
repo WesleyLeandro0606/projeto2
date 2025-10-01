@@ -5,6 +5,7 @@ body {
     background-color: white; 
     color: black;
     margin: 0px;
+    background-color: #b3e5fc;
 }
 
 #imagem{
@@ -13,12 +14,12 @@ body {
 }
 
 #header-container {
-    background-color: #b3e5fc;
+    background-color: #4fc3f7;
     padding: 15px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #01579b;
+    color: black;
     
 }
 

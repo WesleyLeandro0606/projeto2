@@ -40,7 +40,7 @@ function renderizarListaDeDoadores(doadores) {
         doadoresDiv.innerHTML = `
         <strong> Nome: </strong> ${doador.nome}<br>
         <strong> Email: </strong> ${doador.email}<br>
-        <strong> CNPJ: </strong> ${doador.cnpj}<br>
+        <strong> cnpj: </strong> ${doador.cnpj}<br>
         <button class="botaoExcluir" data-id="${doador.id}">Excluir</button>
         <button class="botaoEditar" data-id="${doador.id}">Editar</button>      `
         listaDoadoresDiv.appendChild(doadoresDiv)
